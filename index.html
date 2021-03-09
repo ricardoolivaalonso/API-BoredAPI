@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nice-select2.css">
+    <script src="nice-select2.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Let's find you something to do</h1>
+        
+        <form id="form" class="form">
+            <select id="activity" class="form__select">
+                <option value="" data-display="Select sddsdsdddsssdds">random</option>
+                <option value="education">education</option>
+                <option value="charity">charity</option>
+                <option value="recreational">recreational</option>
+                <option value="relaxation">relaxation</option>
+                <option value="busywork">busywork</option>
+                <option value="social">social</option>
+                <option value="diy">diy</option>
+            </select>
+            <select id="participants" class="form__select">
+                <option value="">random</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <button type="submit" class="form__submit">Enviar</button>
+        </form>
+
+        <section id="cards" class="cards"></section>
+        <div id="tag-error" class="tag-error is-element-hidden">No hay ninguna actividad encontrada</div>
+    </div>
+
+    <template id="template">
+        <article class="card__item">
+            <h2 class="card__activity"></h2>
+            <div class="card__info">
+                <span class="card__type"></span>
+                <span class="card__participants">
+                    participants:
+                    <span class="card__number"></span>
+                </span>
+            </div>
+        </article>
+    </template>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
